@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction - Order & Delivery</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="navbar">
+        <li>Materials</li>
+        <li>Ordering</li>
+        <li>Order status</li>
+        <li>Reports</li>
+        <li>Help</li>
+    </div>
+    <form>
+        <input type="text" class="mainp" placeholder="Enter the commodity you'd like to order" required>
+        <button type="submit" class="orderbutton">Click me
+        </button>
+        <div class="select">
+            <select name="orders" class="filter">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+    <div class="ordercontainer">
+        <ul class="orderslist"></ul>
+    </div>
+    <script src="order.js"></script>
+</body>
+</html>
